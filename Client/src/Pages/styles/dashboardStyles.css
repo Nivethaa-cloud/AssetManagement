@@ -1,0 +1,159 @@
+.back-ground {
+  min-height: 90vh;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  z-index: 0;
+}
+.white{
+  color: white;
+}
+
+.leftDisplay {
+  padding: 1em;
+}
+
+.rightDisplay {
+  padding: 1em;
+  overflow: none;
+}
+
+.stckRoomDisplay {
+  max-height: 80vh;
+  margin: 1em;
+  padding: 1em;
+  padding-left: 0;
+  margin-left: 0;
+  overflow: auto;
+  color: white;
+}
+.orgMembersDisplay {
+  max-height: 80vh;
+  width: 200px;
+}
+
+.assetDisplay {
+  resize: vertical;
+  overflow: auto;
+  max-height: 100vh;
+  display: flexbox;
+  padding: 0.5em;
+  overflow-y: auto;
+}
+
+#AssetList {
+  overflow: auto;
+  max-height: 450px;
+  width: 1125px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stockroom-list {
+  max-width: 600px;
+  text-align: start;
+  color: white;
+}
+
+.userDisplay {
+  background-color: rgb(180, 180, 180);
+  width: 300px;
+  height: 250px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.orgDisplay {
+  background-color: rgb(180, 180, 180);
+  max-height: 50vh;
+  border-radius: 10px;
+  overflow: auto;
+  margin-top: 1rem;
+}
+
+.outerOrg {
+  background-color: transparent;
+}
+
+.buttonItem {
+  border: none;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: gray;
+  border-radius: 100px;
+}
+.btn-color{
+  background-color: rgb(57, 59, 59);
+  border-color: rgb(57, 59, 59);
+}
+
+.createButton, .deleteButton {
+  border-radius: 99px;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  margin: 5px;
+}
+
+.buttonItem button.toggle-btn {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+}
+
+.buttonItem:hover {
+  background-color: rgb(75, 75, 75);
+  box-shadow: 0px 5px 7px 0px rgb(30, 30, 30);
+  animation: smoothScale 0.15s ease-in forwards;
+}
+
+.buttonItem:active {
+  background-color: rgb(32, 32, 32);
+  box-shadow: inset 0px 5px 7px 0px rgb(23, 23, 23);
+  animation: smoothShrink 0.13s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.button:hover {
+  animation: smoothScale 0.15s ease-in forwards;
+}
+
+.userDiv {
+  display: flex;
+  color: rgb(172, 82, 236);
+}
+.userDiv p {
+  color: rgb(255, 255, 255);
+  font-size: 42px;
+  text-align: center;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.imgDiv {
+  width: 75px;
+  height: 150px;
+}
+
+@keyframes smoothScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes smoothShrink {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.98);
+  }
+}
